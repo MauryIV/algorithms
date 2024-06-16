@@ -5,12 +5,8 @@ var vowelCount = function(str) {
   const vowelArr = ["a", "e", "i", "o", "u"];
   for (i=0; i<str.length; i++) {
     let letter = str[i].toLowerCase();
-    let vowel = '';
-    for (j=0; j<vowelArr.length; j++) {
-      vowel = vowelArr[j];
-      if (letter === vowel) {
+    if (vowelArr.includes(letter)) {
         vowels++;
-      }
     }
   }
   console.log(vowels)
