@@ -3,5 +3,5 @@
 // Return the maximum number of songs from the list that can fit in a 60 minute playlist
 
 var mostSongsInPlaylist = function(arr) {
-  // add your code here...
+  
 };

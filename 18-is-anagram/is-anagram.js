@@ -5,17 +5,22 @@ var isAnagram = function(strA, strB) {
   if (strA.length !== strB.length) {
     return false;
   }
-  for (i=0; i<strA.length; i++) {
-    const letterA = strA[i];
-    if (!strB.includes(letterA)) {
-      return false;
-    }
-  }
-  for (i=0; i<strB.length; i++) {
-    const letterB = strB[i];
-    if (!strA.includes(letterB)) {
-      return false;
-    }
-  }
-  return true;
+  // for (i=0; i<strA.length; i++) {
+  //   const letterA = strA[i];
+  //   if (!strB.includes(letterA)) {
+  //     return false;
+  //   }
+  // }
+  // for (i=0; i<strB.length; i++) {
+  //   const letterB = strB[i];
+  //   if (!strA.includes(letterB)) {
+  //     return false;
+  //   }
+  // }
+  // return true;
+
+  var sortedA = strA.split('').sort().join('');
+  var sortedB = strB.split('').sort().join('');
+
+  return sortedA === sortedB;
 };
