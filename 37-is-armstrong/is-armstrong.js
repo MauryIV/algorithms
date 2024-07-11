@@ -5,4 +5,20 @@
 
 // TODO: Complete the function below:
 
-var isArmstrong = function(num) {};
+var isArmstrong = function(num) {
+  let sum = 0
+  let poweredArr = [];
+  const numStr = num.toString()
+  const numLength = numStr.length
+  for (let i=0; i<numLength; i++) {
+    poweredArr.push(parseInt(numStr[i] ** numLength));
+  }
+  for (let i=0; i<poweredArr.length; i++) {
+    sum += poweredArr[i];
+  }
+  if (sum === num) {
+    return true;
+  } else {
+    return false;
+  }
+};
