@@ -10,7 +10,7 @@ describe("smallestDifference", function() {
     expect(result).to.eql([2, 2]);
   });
 
-  it(`should return [99, 101] if given the arrays [15, 30, 31, 40, 99] and [36, 47, 58, 69, 80]`, function() {
+  it(`should return [99, 101] if given the arrays [15, 30, 31, 40, 99] and [36, 47, 58, 69, 80, 101]`, function() {
     var arr1 = [-9, 0, 15, 30, 31, 40, 99];
     var arr2 = [36, 47, 58, 69, 80, 101];
 
