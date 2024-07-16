@@ -23,6 +23,9 @@ var intToRoman = function(num) {
   } if (num >= 50) {
     roman.push('L');
     num = num - 50;
+  } if (num >= 40) {
+    roman.push('XL');
+    num = num - 40;
   } while (num >= 10) {
     roman.push('X');
     num = num - 10;
